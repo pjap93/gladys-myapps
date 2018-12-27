@@ -13,7 +13,11 @@ module.exports = function(sails) {
 	var device_condition = require('./lib/core/device/device.condition.js');
 	var device_isItValidCondition = require('./lib/core/device/device.isItValidCondition.js');
 	var flipflop = require('./lib/core/device/devicetype.flipflop.js');
+	var SendNotifySmsFree = require('./lib/core/notify/notify.SendNotifySmsFree.js');
+	var SendNotifyTelegram = require('./lib/core/notify/notify.SendNotifyTelegram.js');
+	var SendNotifyByService = require('./lib/core/notify/notify.SendNotifyByService.js');
 
+	
 
 
     //var uninstall = require('./lib/uninstall.js');
@@ -24,7 +28,7 @@ module.exports = function(sails) {
 
     return {
           //setup: setup,
-      install: install,
+      	  install: install,
           //uninstall: uninstall,
 	  //exec: exec,
 	  //getDay: getDay,
@@ -35,7 +39,10 @@ module.exports = function(sails) {
 	  classify_muet: classify_muet,
 	  device_condition: device_condition,
 	  device_isItValidCondition: device_isItValidCondition,
-	  flipflop: flipflop
+	  flipflop: flipflop,
+	  SendNotifySmsFree: SendNotifySmsFree,
+	  SendNotifyTelegram: SendNotifyTelegram,
+	  SendNotifyByService: SendNotifyByService,
 
         };
 };
