@@ -1,6 +1,6 @@
 {
   "name": "gladys-myapps",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gladys hooks to add new functions",
   "main": "index.js",
   "scripts": {

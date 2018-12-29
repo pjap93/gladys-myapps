@@ -9,4 +9,7 @@ Ajout de différentes fonctionnalitées à Gladys
 
 ## Ajout de fonctions à la liste des conditions pour les scénarios
 
-- Function device_isItValidCondition : permet de créer une condition par rapport à la valeur d'un deviceType 
+- Fonction device_isItValidCondition : permet de créer une condition par rapport à la valeur d'un deviceType 
+- Fonction isItAM : Permet de créer une condition si matin
+- Fonction isItPM : Permet de créer une condition si après-midi
+- Fonction isInTimeRange : Permet de définir une plage horaire de validation du scénario
