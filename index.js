@@ -27,9 +27,9 @@ module.exports = function(sails) {
     //});
 
     return {
-          //setup: setup,
-      	  install: install,
-          //uninstall: uninstall,
+      //setup: setup,
+      install: install,
+      //uninstall: uninstall,
 	  //exec: exec,
 	  //getDay: getDay,
 	  //isItDay: isItDay
@@ -44,5 +44,5 @@ module.exports = function(sails) {
 	  SendNotifyTelegram: SendNotifyTelegram,
 	  SendNotifyByService: SendNotifyByService,
 
-        };
+    };
 };
