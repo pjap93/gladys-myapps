@@ -3,13 +3,13 @@
 
 Exemple : 
 
-    Nom: TP-Link
+    Nom: MyApps
 	
-    Version: 0.1.6
+    Version: 0.0.3
 	
-    URL Git: https://github.com/pjap93/gladys-tplink
+    URL Git: https://github.com/pjap93/gladys-myapps
 	
-    Slug: tplink
+    Slug: myapps
     
 -	Redémarrer Gladys
  
