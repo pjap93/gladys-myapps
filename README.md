@@ -4,11 +4,11 @@
 Exemple : 
 
    Nom: MyApps
-	
+   
    Version: ![GitHub release](https://img.shields.io/github/release/pjap93/gladys-myapps.svg)
-	
+   
    URL Git: https://github.com/pjap93/gladys-myapps
-	
+   
    Slug: myapps
     
 -	Redémarrer Gladys
