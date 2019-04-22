@@ -5,7 +5,7 @@ Exemple :
 
     Nom: MyApps
 	
-    Version: 0.0.3
+    Version: ![GitHub release](https://img.shields.io/github/release/pjap93/gladys-myapps.svg)
 	
     URL Git: https://github.com/pjap93/gladys-myapps
 	
