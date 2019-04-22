@@ -16,6 +16,7 @@ module.exports = function(sails) {
 	var SendNotifySmsFree = require('./lib/core/notify/notify.SendNotifySmsFree.js');
 	var SendNotifyTelegram = require('./lib/core/notify/notify.SendNotifyTelegram.js');
 	var SendNotifyByService = require('./lib/core/notify/notify.SendNotifyByService.js');
+	var UserIsArea = require('./lib/core/area/area.UserIsArea.js');
 
 	
 
@@ -43,6 +44,6 @@ module.exports = function(sails) {
 	  SendNotifySmsFree: SendNotifySmsFree,
 	  SendNotifyTelegram: SendNotifyTelegram,
 	  SendNotifyByService: SendNotifyByService,
-
+	  UserIsArea: UserIsArea,
     };
 };

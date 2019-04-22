@@ -11,5 +11,8 @@ module.exports.routes = {
   'POST /devicetype/:id/flipflop': 'myAppsController.flipflop',
   'GET /devicetype/:id/flipflop': 'myAppsController.flipflopGet',
 
-
+  'POST /area/user_is_area/:user/latitude/:lat/longitude/:long': 'myAppsController.UserIsArea',
+  'GET /area/user_is_area/:value': 'myAppsController.UserIsAreaGet' //value: user;latitude;longitude
+  
+  
 };

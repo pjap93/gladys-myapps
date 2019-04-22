@@ -97,7 +97,49 @@ module.exports = {
         return res.json(state);
       })
       .catch(next);
+  },
+  
+  /**
+   * @api {POST} /area/useris/:user/latitude/:lat/longitude/:long'
+   * @apiName UserIsArea
+   * @apiGroup myApps
+   * @apiPermission authenticated
+   * @apiDescription 
+   * @apiParam {float} [value] 
+   *
+   * @apiUse myAppasSuccess
+   */
+  UserIsArea: function(req, res, next) {
+	console.log(req.params);
+    gladys.modules.myapps
+      .UserIsArea({ user: req.params.user, latitude: req.params.lat, longitude: req.params.long})
+      .then(function(state) {
+        return res.json(state);
+      })
+      .catch(next);
+  },
+  
+  UserIsAreaGet: function(req, res, next) {
+	console.log(req.params);
+      var strsplit = req.params.value.split(';');
+      var location = {};
+      
+
+      location.latitude = strsplit[1];
+      location.longitude = strsplit[2];
+      location.user = strsplit[0];
+
+      console.log("---> Recup position http User"+location.user);
+      //console.log(location);
+    gladys.modules.myapps
+      .UserIsArea({ user: location.user, latitude: location.latitude, longitude: location.longitude})
+      .then(function(state) {
+        return res.json(state);
+      })
+      .catch(next);
   }
+
+
 
 
 };
